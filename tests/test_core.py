@@ -127,5 +127,16 @@ class ClaimsTest(helpers.AlexHome):
         self.assertEqual(r2.errors, [])
 
 
+class TemplateTest(unittest.TestCase):
+    def test_no_letter_spacing_or_ligatures(self):
+        """Letter-spacing splits words in extracted text ("S K I L LS") and
+        ligatures drop letters ("Microsof"); an ATS reads the extracted text."""
+        for name in ("theme.typ", "resume.typ", "cover-letter.typ"):
+            code = "\n".join(line.split("//")[0] for line in
+                             (helpers.REPO / "templates" / name).read_text().splitlines())
+            self.assertNotIn("tracking:", code, name)
+        self.assertIn("ligatures: false", (helpers.REPO / "templates" / "theme.typ").read_text())
+
+
 if __name__ == "__main__":
     unittest.main()

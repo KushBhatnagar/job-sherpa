@@ -10,13 +10,15 @@
           margin: (top: 36pt, bottom: 32pt, left: 36pt, right: 36pt))
 #show: base
 #set text(size: body-size)
-#set par(leading: 0.42em, spacing: 0.5em)
+#set par(leading: 0.48em, spacing: 0.5em)
 
 #let section(title) = {
   v(7pt)
-  block(sticky: true, below: 5pt, {
-    text(size: 9.2pt, weight: 700, tracking: 1.1pt, upper(title))
-    v(-5pt)
+  // Heading, a small gap, then the rule: the rule must never touch the letters.
+  // No letter-spacing: it makes text extraction (what an ATS reads) split
+  // headings into "S K I L LS".
+  block(sticky: true, below: 6pt, {
+    block(below: 3.5pt, text(size: 9.6pt, weight: 700, upper(title)))
     rule()
   })
 }
@@ -26,7 +28,7 @@
     text(size: body-size + 0.3pt, weight: 600, title),
     text(size: body-size - 0.3pt, fill: colors.meta, dates)))
 
-#let bullet-item(t) = block(above: 2.4pt, below: 2.4pt, breakable: false,
+#let bullet-item(t) = block(above: 3pt, below: 3pt, breakable: false,
   grid(columns: (11pt, 1fr), [•], t))
 
 // ── Header + summary ──
