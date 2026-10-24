@@ -1,0 +1,12 @@
+{
+  "_about": "Your master resume: full detail, untailored. Bullets are ids from bullets.yaml. Render with: sherpa master-resume",
+  "summary": "",
+  "experience": [
+    {"org": "", "roles": [{"title": "", "dates": "", "bullets": []}]}
+  ],
+  "projects": [],
+  "skills": [],
+  "education": [],
+  "certifications": [],
+  "activities": []
+}

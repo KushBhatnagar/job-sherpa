@@ -1,0 +1,21 @@
+# Your private folder: profile, bullets, database, drafts, applications.
+# Never commit it. The .githooks/pre-commit hook enforces this too.
+me/
+
+# Secrets
+.env
+
+# Generated when you try the sample user (SHERPA_HOME=examples/alex)
+examples/*/sherpa.db
+examples/*/master/
+examples/*/drafts/
+examples/*/applications/
+examples/*/source/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+build/
+dist/

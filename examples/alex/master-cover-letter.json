@@ -1,0 +1,8 @@
+{
+  "_about": "SAMPLE (fictional). The master cover letter: names no company or role. For portals that ask for a letter, and the starting point for tailored letters. Render with: sherpa master-cover-letter",
+  "paragraphs": [
+    "I am a backend engineer with 8 years of experience building services that people depend on: shipment tracking for a logistics company, and payouts for a payments company. I like problems where reliability and speed matter to real customers, and I like owning a service from design to the on-call rotation.",
+    "At Parcelwise I led the redesign of our shipment-tracking service into event-driven services, which cut p95 latency from 1.8s to 400ms, and built the carrier-integration platform that brought a new carrier online in 8 days instead of 6 weeks. Before that, at Northwind Payments, I built the reconciliation job that matched 2M+ transactions a day and removed duplicate charges from the payments API with idempotency keys.",
+    "I am looking for a senior backend or platform role in Berlin or remote within Europe, on a team that treats operability as part of the product."
+  ]
+}

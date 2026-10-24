@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Run `bin/sherpa <command>` from anywhere; same as `python3 -m sherpa <command>`
+# from the repo root.
+cd "$(dirname "$0")/.." && exec python3 -m sherpa "$@"

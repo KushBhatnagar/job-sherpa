@@ -1,0 +1,40 @@
+{
+  "_about": "SAMPLE (fictional). The master resume: full detail, untailored. Bullets are ids from bullets.yaml, so a fix there flows into every document. Render with: sherpa master-resume",
+  "summary": "Backend engineer with 8 years building reliable services for logistics and payments. Designs event-driven systems in Go and Python, cares about latency, SLOs and the people on call, and has led platform work used by 22 delivery carriers.",
+  "experience": [
+    {
+      "org": "Parcelwise GmbH",
+      "roles": [
+        {
+          "title": "Senior Backend Engineer",
+          "dates": "Mar 2021 – Present",
+          "bullets": ["b-001", "b-003", "b-002", "b-005", "b-006", "b-004"]
+        }
+      ]
+    },
+    {
+      "org": "Northwind Payments",
+      "roles": [
+        {
+          "title": "Backend Engineer",
+          "dates": "Sep 2017 – Feb 2021",
+          "bullets": ["b-007", "b-008", "b-009", "b-010"]
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {"title": "ratelimit-go (open source)", "bullet": "b-011"}
+  ],
+  "skills": [
+    {"label": "Languages", "value": "Go, Python, SQL"},
+    {"label": "Systems", "value": "Kafka, PostgreSQL, Redis, REST and gRPC APIs, event-driven architecture"},
+    {"label": "Cloud & delivery", "value": "AWS, Terraform, GitHub Actions, Docker, Kubernetes"},
+    {"label": "Practices", "value": "SLOs and error budgets, contract testing, incident response, mentoring"}
+  ],
+  "education": [
+    {"degree": "B.Sc. Computer Science", "detail": "Example University, 2017"}
+  ],
+  "certifications": ["AWS Certified Developer - Associate"],
+  "activities": []
+}

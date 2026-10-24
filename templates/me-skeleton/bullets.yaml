@@ -1,0 +1,7 @@
+# Your bullet bank: one record per achievement, the single source of truth for
+# every resume and cover-letter claim. The onboard playbook builds it from your
+# resume and your answers; see examples/alex/bullets.yaml for a filled one.
+#
+# Fields: id, org, role_title, period, text, metric, tags, evidence_strength
+# (strong | moderate | supporting), source ("resume line 12", "interview
+# YYYY-MM-DD"), notes. Wrap a value in "quotes" if it contains ' #'.

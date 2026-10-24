@@ -1,0 +1,139 @@
+# SAMPLE BULLET BANK (fictional). Your real one lives at me/bullets.yaml.
+#
+# One record per achievement. This file is the single source of truth for every
+# resume and cover-letter claim: tailoring may reword for vocabulary, but
+# `sherpa tailor-resume` refuses any number that isn't here.
+#
+# Fields:
+#   id                 b-001, b-002, ... never reuse or renumber
+#   org, role_title    where and as what
+#   period             YYYY-MM..YYYY-MM or YYYY-MM..present
+#   text               the bullet exactly as it may appear on a resume
+#   metric             the number(s) in it, in plain words (optional)
+#   tags               comma-separated keywords, matched against job descriptions
+#   evidence_strength  strong | moderate | supporting
+#   source             where it came from: "resume line 12", "interview 2026-10-24", ...
+#   notes              usage rules, e.g. "same result as b-004: never use both"
+#
+# Wrap a value in "quotes" if it contains ' #' or starts with a quote.
+
+- id: b-001
+  org: Parcelwise GmbH
+  role_title: Senior Backend Engineer
+  period: 2021-03..present
+  text: Led the redesign of the shipment-tracking service from a monolith module into three event-driven services, cutting p95 tracking-page latency from 1.8s to 400ms.
+  metric: p95 latency 1.8s -> 400ms
+  tags: microservices, event-driven, kafka, performance, system-design
+  evidence_strength: strong
+  source: resume line 9
+  notes:
+
+- id: b-002
+  org: Parcelwise GmbH
+  role_title: Senior Backend Engineer
+  period: 2021-03..present
+  text: Introduced contract testing between 14 internal services, reducing integration-related production incidents by 35% over two quarters.
+  metric: 35% fewer integration incidents, 14 services
+  tags: testing, reliability, api-design, microservices
+  evidence_strength: strong
+  source: resume line 10
+  notes:
+
+- id: b-003
+  org: Parcelwise GmbH
+  role_title: Senior Backend Engineer
+  period: 2021-03..present
+  text: Built the carrier-integration platform in Go that onboarded 22 delivery carriers through one adapter interface, taking a new carrier from 6 weeks to 8 days.
+  metric: 22 carriers; onboarding 6 weeks -> 8 days
+  tags: go, platform, api-design, integrations, logistics
+  evidence_strength: strong
+  source: resume line 11
+  notes:
+
+- id: b-004
+  org: Parcelwise GmbH
+  role_title: Senior Backend Engineer
+  period: 2021-03..present
+  text: Mentored 4 engineers through their first on-call rotations and wrote the team's incident-response runbook.
+  metric: 4 engineers mentored
+  tags: mentoring, on-call, incident-response, leadership
+  evidence_strength: moderate
+  source: interview 2026-10-24
+  notes: Not on the original resume; Alex confirmed it during onboarding.
+
+- id: b-005
+  org: Parcelwise GmbH
+  role_title: Senior Backend Engineer
+  period: 2021-03..present
+  text: Moved service deployments from hand-run scripts to Terraform and GitHub Actions, cutting a full release from half a day to 25 minutes.
+  metric: release time half a day -> 25 minutes
+  tags: terraform, ci-cd, devops, aws, automation
+  evidence_strength: strong
+  source: resume line 12
+  notes:
+
+- id: b-006
+  org: Parcelwise GmbH
+  role_title: Senior Backend Engineer
+  period: 2021-03..present
+  text: Partnered with product and operations to define SLOs for the five customer-facing APIs, and owned their error budgets.
+  metric: 5 APIs with SLOs
+  tags: slo, reliability, observability, stakeholder-management
+  evidence_strength: moderate
+  source: interview 2026-10-24
+  notes:
+
+- id: b-007
+  org: Northwind Payments
+  role_title: Backend Engineer
+  period: 2017-09..2021-02
+  text: Built the payout reconciliation job in Python and PostgreSQL that matched 2M+ transactions a day, replacing a manual spreadsheet process.
+  metric: 2M+ transactions/day
+  tags: python, postgresql, fintech, data-pipelines, automation
+  evidence_strength: strong
+  source: resume line 16
+  notes:
+
+- id: b-008
+  org: Northwind Payments
+  role_title: Backend Engineer
+  period: 2017-09..2021-02
+  text: Added idempotency keys to the payments API, eliminating duplicate charges caused by client retries.
+  metric:
+  tags: api-design, payments, fintech, reliability
+  evidence_strength: strong
+  source: resume line 17
+  notes:
+
+- id: b-009
+  org: Northwind Payments
+  role_title: Backend Engineer
+  period: 2017-09..2021-02
+  text: Profiled and indexed the 12 slowest PostgreSQL queries behind merchant reports, bringing report generation under 3 seconds.
+  metric: 12 queries; reports under 3s
+  tags: postgresql, performance, sql
+  evidence_strength: moderate
+  source: resume line 18
+  notes:
+
+- id: b-010
+  org: Northwind Payments
+  role_title: Backend Engineer
+  period: 2017-09..2021-02
+  text: Wrote the internal guide to PCI-DSS-safe logging and reviewed logging changes across 3 teams.
+  metric: 3 teams
+  tags: security, compliance, pci-dss, fintech, documentation
+  evidence_strength: supporting
+  source: resume line 19
+  notes:
+
+- id: b-011
+  org: Open source
+  role_title: Maintainer
+  period: 2020-01..present
+  text: Maintain an open-source Go library for rate limiting (1,200 GitHub stars), reviewing community pull requests and cutting monthly releases.
+  metric: 1,200 stars
+  tags: go, open-source, rate-limiting, community
+  evidence_strength: moderate
+  source: resume line 24
+  notes: Project, not a job. Use in the Projects section.

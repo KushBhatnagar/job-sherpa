@@ -1,0 +1,61 @@
+# SAMPLE PROFILE. Alex Rivera is fictional: every name, company, number and
+# contact detail in examples/alex/ is made up. Use it to try Job Sherpa
+# (SHERPA_HOME=examples/alex) and as a model for your own me/profile.toml.
+
+[contact]
+name = "Alex Rivera"
+location = "Berlin, Germany"
+phone = "+49 000 0000000"
+email = "alex.rivera@example.com"
+links = ["linkedin.com/in/example-alex", "github.com/example-alex"]
+
+[experience]
+total_years = 8
+role_years = 8
+role_years_since = "2017-09"
+role_years_note = "8 years of backend engineering"
+highest_degree = "B.Sc. Computer Science"
+certifications = ["AWS Certified Developer - Associate"]
+work_authorization = ["Germany", "EU"]
+
+[targets]
+titles = ["backend engineer", "software engineer", "platform engineer"]
+near_miss_titles = ["engineering manager", "tech lead", "staff engineer"]
+exclude_title_words = ["intern", "working student", "sales engineer", "frontend"]
+seniority = ["senior"]
+locations = ["berlin", "germany"]
+remote = "allowed-regions"
+remote_regions = ["emea", "europe", "eu", "germany", "dach"]
+maybe_reachable = ["dach", "brandenburg", "cet"]
+country_codes = ["DE", "DEU"]
+relocation = false
+industries_want = ["logistics", "developer tools", "fintech"]
+industries_avoid = ["gambling"]
+role_types = ["Hands-on backend or platform engineering with ownership of services in production"]
+dealbreakers = ["Contract-only roles", "More than 1 on-call week in 4"]
+
+[compensation]
+currency = "EUR"
+current = "78,000"
+walk_away = "80,000"
+notes = "Base salary. Ask for their band first."
+
+[logistics]
+notice_period = "3 months"
+travel = "up to 10%"
+time_zones = "CET, overlap with US East mornings is fine"
+
+[search]
+adzuna_country = "de"
+adzuna_queries = ["backend engineer"]
+adzuna_where = "Berlin"
+stale_after_days = 60
+hard_gate_cap = 6
+shortlist_min_score = 7
+followup_after_days = 7
+followup_until_days = 21
+
+[documents]
+paper = "a4"
+one_page_resume = true
+file_name = "Alex Rivera"

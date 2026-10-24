@@ -1,0 +1,67 @@
+# Your profile. The `onboard` playbook fills this in with you; you can also edit
+# it by hand. Every setting that used to be hardcoded for one person lives here.
+# Format: TOML (https://toml.io). Strings in "quotes", lists in [brackets].
+
+[contact]                     # printed at the top of your resume and cover letter
+name = ""
+location = ""                 # e.g. "Berlin, Germany"
+phone = ""
+email = ""
+links = []                    # e.g. ["linkedin.com/in/you", "github.com/you"]
+
+[experience]                  # hard facts: scoring compares these to a job's stated minimums
+total_years = 0               # all professional experience
+role_years = 0                # years in the kind of role you're targeting
+role_years_since = ""         # "YYYY-MM": when that count starts, so every document says the same number
+role_years_note = ""          # how to state it, e.g. "5+ years of product management"
+highest_degree = ""           # e.g. "B.Sc. Computer Science"
+certifications = []
+work_authorization = []       # where you can work without sponsorship, e.g. ["Germany", "EU"]
+
+[targets]
+# Titles worth storing. Case-insensitive; a posting is kept if any of these appears in its title.
+titles = []                   # e.g. ["software engineer", "backend engineer"]
+# Titles discovery shouldn't store but should mention, in case you want them.
+near_miss_titles = []         # e.g. ["engineering manager", "tech lead"]
+# Titles to drop even when they match, e.g. ["intern", "sales engineer"].
+exclude_title_words = []
+seniority = []                # e.g. ["senior", "staff"]: used by scoring, not by filters
+# Places you can work on-site or hybrid. A posting naming any of these is kept.
+locations = []                # e.g. ["berlin", "germany"]
+# Remote appetite: "anywhere" (world-remote ok), "allowed-regions" (only remote_regions), or "none".
+remote = "anywhere"
+remote_regions = []           # remote postings naming these are fine, e.g. ["emea", "europe", "eu"]
+# Dropped locations worth a second look in the discover report, e.g. ["dach", "brandenburg"].
+maybe_reachable = []
+country_codes = []            # trailing codes that mean your country, e.g. ["DE", "DEU"]
+relocation = false
+industries_want = []
+industries_avoid = []
+role_types = []               # what the job must really be, in your words
+dealbreakers = []             # e.g. ["contract roles", "on-call more than 1 week in 4"]
+
+[compensation]                # private: used to judge offers, never written into documents
+currency = ""
+current = ""
+walk_away = ""                # below this is a no
+notes = ""
+
+[logistics]
+notice_period = ""
+travel = ""
+time_zones = ""
+
+[search]
+adzuna_country = ""           # two-letter Adzuna country code (gb, us, in, de, ...); blank = skip Adzuna
+adzuna_queries = []           # e.g. ["backend engineer"]
+adzuna_where = ""             # optional city filter for Adzuna
+stale_after_days = 60         # postings older than this are dismissed and left off shortlists
+hard_gate_cap = 6             # missing a stated minimum (years, degree) caps the fit score here
+shortlist_min_score = 7
+followup_after_days = 7       # `sherpa followups` lists applications silent for this long...
+followup_until_days = 21      # ...up to this many days
+
+[documents]
+paper = "a4"                  # "a4" or "us-letter"
+one_page_resume = true
+file_name = ""                # PDF file name prefix; defaults to your name

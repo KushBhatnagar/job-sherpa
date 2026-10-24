@@ -1,0 +1,519 @@
+# Starter list: ~100 tech companies with public job boards, verified against
+# their live boards in Oct 2026. Strong on AI, data, developer tools, fintech and
+# security, with many India-headquartered companies. `sherpa init` copies it to
+# me/companies.yaml, where it's yours to edit: delete what you don't want, add
+# your own targets.
+#
+# Fields: name, ats_type (greenhouse | lever | ashby | smartrecruiters),
+# ats_token (the board's name in its URL), notes.
+#
+# Find a company's board: open its careers page, click through to the job list,
+# and read the URL: boards.greenhouse.io/<token>, jobs.lever.co/<token>,
+# jobs.ashbyhq.com/<token>, jobs.smartrecruiters.com/<token>.
+# Check the whole file any time with `sherpa check-companies`; companies change
+# ATS quietly. Pull requests with more companies, or new regional lists, welcome.
+
+- name: Databricks
+  ats_type: greenhouse
+  ats_token: databricks
+  notes: 
+
+- name: MongoDB
+  ats_type: greenhouse
+  ats_token: mongodb
+  notes: 
+
+- name: Datadog
+  ats_type: greenhouse
+  ats_token: datadog
+  notes: 
+
+- name: Elastic
+  ats_type: greenhouse
+  ats_token: elastic
+  notes: 
+
+- name: Twilio
+  ats_type: greenhouse
+  ats_token: twilio
+  notes: 
+
+- name: GitLab
+  ats_type: greenhouse
+  ats_token: gitlab
+  notes: 
+
+- name: Anthropic
+  ats_type: greenhouse
+  ats_token: anthropic
+  notes: 
+
+- name: Asana
+  ats_type: greenhouse
+  ats_token: asana
+  notes: 
+
+- name: Samsara
+  ats_type: greenhouse
+  ats_token: samsara
+  notes: 
+
+- name: Intercom
+  ats_type: greenhouse
+  ats_token: intercom
+  notes: 
+
+- name: PagerDuty
+  ats_type: greenhouse
+  ats_token: pagerduty
+  notes: 
+
+- name: Vercel
+  ats_type: greenhouse
+  ats_token: vercel
+  notes: 
+
+- name: Brex
+  ats_type: greenhouse
+  ats_token: brex
+  notes: 
+
+- name: Stripe
+  ats_type: greenhouse
+  ats_token: stripe
+  notes: 
+
+- name: Scale AI
+  ats_type: greenhouse
+  ats_token: scaleai
+  notes: 
+
+- name: Palantir
+  ats_type: lever
+  ats_token: palantir
+  notes: 
+
+- name: Airtable
+  ats_type: greenhouse
+  ats_token: airtable
+  notes: 
+
+- name: Figma
+  ats_type: greenhouse
+  ats_token: figma
+  notes: 
+
+- name: Freshworks
+  ats_type: smartrecruiters
+  ats_token: freshworks
+  notes: 
+
+- name: Outreach
+  ats_type: lever
+  ats_token: outreach
+  notes: 
+
+- name: Braze
+  ats_type: greenhouse
+  ats_token: braze
+  notes: 
+
+- name: Amplitude
+  ats_type: greenhouse
+  ats_token: amplitude
+  notes: 
+
+- name: Mixpanel
+  ats_type: greenhouse
+  ats_token: mixpanel
+  notes: 
+
+- name: Pendo
+  ats_type: greenhouse
+  ats_token: pendo
+  notes: 
+
+- name: Aha!
+  ats_type: greenhouse
+  ats_token: aha
+  notes: 
+
+- name: CircleCI
+  ats_type: greenhouse
+  ats_token: circleci
+  notes: 
+
+- name: LaunchDarkly
+  ats_type: greenhouse
+  ats_token: launchdarkly
+  notes: 
+
+- name: JFrog
+  ats_type: greenhouse
+  ats_token: jfrog
+  notes: 
+
+- name: SonarSource
+  ats_type: lever
+  ats_token: sonarsource
+  notes: 
+
+- name: Cloudflare
+  ats_type: greenhouse
+  ats_token: cloudflare
+  notes: 
+
+- name: Fastly
+  ats_type: greenhouse
+  ats_token: fastly
+  notes: 
+
+- name: Okta
+  ats_type: greenhouse
+  ats_token: okta
+  notes: 
+
+- name: Tanium
+  ats_type: greenhouse
+  ats_token: tanium
+  notes: 
+
+- name: Rubrik
+  ats_type: greenhouse
+  ats_token: rubrik
+  notes: 
+
+- name: Pure Storage
+  ats_type: greenhouse
+  ats_token: purestorage
+  notes: 
+
+- name: CockroachDB
+  ats_type: greenhouse
+  ats_token: cockroachlabs
+  notes: 
+
+- name: PlanetScale
+  ats_type: greenhouse
+  ats_token: planetscale
+  notes: 
+
+- name: Neon
+  ats_type: lever
+  ats_token: neon
+  notes: 
+
+- name: Dremio
+  ats_type: greenhouse
+  ats_token: dremio
+  notes: 
+
+- name: Fivetran
+  ats_type: greenhouse
+  ats_token: fivetran
+  notes: 
+
+- name: Matillion
+  ats_type: lever
+  ats_token: matillion
+  notes: 
+
+- name: Dataiku
+  ats_type: greenhouse
+  ats_token: dataiku
+  notes: 
+
+- name: Labelbox
+  ats_type: greenhouse
+  ats_token: labelbox
+  notes: 
+
+- name: Contentful
+  ats_type: greenhouse
+  ats_token: contentful
+  notes: 
+
+- name: Honeycomb
+  ats_type: greenhouse
+  ats_token: honeycomb
+  notes: 
+
+- name: New Relic
+  ats_type: greenhouse
+  ats_token: newrelic
+  notes: 
+
+- name: Sumo Logic
+  ats_type: greenhouse
+  ats_token: sumologic
+  notes: 
+
+- name: Secureframe
+  ats_type: lever
+  ats_token: secureframe
+  notes: 
+
+- name: Stability AI
+  ats_type: greenhouse
+  ats_token: stabilityai
+  notes: 
+
+- name: Swiggy
+  ats_type: smartrecruiters
+  ats_token: swiggy
+  notes: Indian; food/quick-commerce tech
+
+- name: Meesho
+  ats_type: lever
+  ats_token: meesho
+  notes: Indian; e-commerce
+
+- name: HighRadius
+  ats_type: greenhouse
+  ats_token: highradius
+  notes: Indian-origin; fintech/AR automation SaaS
+
+- name: Zenoti
+  ats_type: greenhouse
+  ats_token: zenoti
+  notes: Indian-origin; vertical SaaS
+
+- name: Acceldata
+  ats_type: lever
+  ats_token: acceldata
+  notes: Indian-origin; data observability
+
+- name: Druva
+  ats_type: greenhouse
+  ats_token: druva
+  notes: Indian-origin; data protection SaaS
+
+- name: Sigmoid
+  ats_type: greenhouse
+  ats_token: sigmoid
+  notes: Indian; data engineering/analytics
+
+- name: slice
+  ats_type: greenhouse
+  ats_token: slice
+  notes: Indian; fintech
+
+- name: Mindtickle
+  ats_type: lever
+  ats_token: mindtickle
+  notes: Indian-origin; sales enablement SaaS
+
+- name: Observe.AI
+  ats_type: greenhouse
+  ats_token: observeai
+  notes: Indian-origin; conversational AI
+
+- name: CRED
+  ats_type: lever
+  ats_token: cred
+  notes: Indian; fintech
+
+- name: Navi
+  ats_type: ashby
+  ats_token: navi
+  notes: Indian; fintech
+
+- name: Groww
+  ats_type: greenhouse
+  ats_token: groww
+  notes: Indian; fintech
+
+- name: Atlan
+  ats_type: ashby
+  ats_token: atlan
+  notes: Indian-origin; data catalog/governance
+
+- name: Tekion
+  ats_type: ashby
+  ats_token: tekion
+  notes: large India engineering presence; automotive SaaS
+
+- name: Zscaler
+  ats_type: greenhouse
+  ats_token: zscaler
+  notes: large India presence; cloud security
+
+- name: Snowflake
+  ats_type: ashby
+  ats_token: snowflake
+  notes: India presence; data cloud
+
+- name: Netskope
+  ats_type: greenhouse
+  ats_token: netskope
+  notes: India presence; cloud security
+
+- name: Confluent
+  ats_type: ashby
+  ats_token: confluent
+  notes: India presence; data streaming
+
+- name: Ping Identity
+  ats_type: greenhouse
+  ats_token: pingidentity
+  notes: 
+
+- name: Transmit Security
+  ats_type: greenhouse
+  ats_token: transmitsecurity
+  notes: identity/IAM
+
+- name: Sonatype
+  ats_type: lever
+  ats_token: sonatype
+  notes: software supply chain security
+
+- name: Chainguard
+  ats_type: greenhouse
+  ats_token: chainguard
+  notes: software supply chain security
+
+- name: Semgrep
+  ats_type: ashby
+  ats_token: semgrep
+  notes: code security
+
+- name: Starburst
+  ats_type: greenhouse
+  ats_token: starburst
+  notes: data lakehouse/query engine
+
+- name: Cohere
+  ats_type: ashby
+  ats_token: cohere
+  notes: enterprise LLM platform
+
+- name: Perplexity
+  ats_type: ashby
+  ats_token: perplexity
+  notes: AI search
+
+- name: Writer
+  ats_type: ashby
+  ats_token: writer
+  notes: enterprise GenAI platform
+
+- name: Harvey
+  ats_type: ashby
+  ats_token: harvey
+  notes: 
+
+- name: Sierra
+  ats_type: ashby
+  ats_token: sierra
+  notes: 
+
+- name: Decagon
+  ats_type: ashby
+  ats_token: decagon
+  notes: 
+
+- name: Abridge
+  ats_type: ashby
+  ats_token: abridge
+  notes: 
+
+- name: Mercor
+  ats_type: ashby
+  ats_token: mercor
+  notes: AI talent marketplace
+
+- name: Cursor (Anysphere)
+  ats_type: ashby
+  ats_token: cursor
+  notes: AI dev tools
+
+- name: Modal
+  ats_type: ashby
+  ats_token: modal
+  notes: AI/ML compute infrastructure
+
+- name: Braintrust
+  ats_type: ashby
+  ats_token: braintrust
+  notes: LLM eval/observability
+
+- name: Replit
+  ats_type: ashby
+  ats_token: replit
+  notes: AI dev platform
+
+- name: Warp
+  ats_type: ashby
+  ats_token: warp
+  notes: AI terminal/dev tools
+
+- name: Notion
+  ats_type: ashby
+  ats_token: notion
+  notes: productivity platform
+
+- name: Linear
+  ats_type: ashby
+  ats_token: linear
+  notes: dev project tooling
+
+- name: Vanta
+  ats_type: ashby
+  ats_token: vanta
+  notes: compliance automation
+
+- name: Ramp
+  ats_type: ashby
+  ats_token: ramp
+  notes: fintech/spend platform
+
+- name: Temporal
+  ats_type: ashby
+  ats_token: temporal
+  notes: durable execution/orchestration
+
+- name: Mercury
+  ats_type: greenhouse
+  ats_token: mercury
+  notes: fintech/banking platform
+
+- name: Watershed
+  ats_type: ashby
+  ats_token: watershed
+  notes: climate/ESG platform
+
+- name: Tailscale
+  ats_type: greenhouse
+  ats_token: tailscale
+  notes: network/zero-trust access
+
+- name: Render
+  ats_type: ashby
+  ats_token: render
+  notes: cloud platform
+
+- name: Railway
+  ats_type: ashby
+  ats_token: railway
+  notes: cloud platform
+
+- name: Gusto
+  ats_type: greenhouse
+  ats_token: gusto
+  notes: HR/payroll SaaS
+
+- name: Nielsen
+  ats_type: smartrecruiters
+  ats_token: TheNielsenCompany
+  notes: 
+
+- name: Razorpay
+  ats_type: greenhouse
+  ats_token: razorpaysoftwareprivatelimited
+  notes: 
+
+- name: OneTrust
+  ats_type: greenhouse
+  ats_token: onetrust
+  notes: 

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Refuse to commit personal data. Turn on with: git config core.hooksPath .githooks
+bad=$(git diff --cached --name-only --diff-filter=ACMR | grep -E '^(me/|\.env$|.*/sherpa\.db$)')
+if [ -n "$bad" ]; then
+  echo "Job Sherpa: refusing to commit personal data:" >&2
+  echo "$bad" | sed 's/^/  /' >&2
+  echo "Unstage it with: git restore --staged <file>" >&2
+  exit 1
+fi

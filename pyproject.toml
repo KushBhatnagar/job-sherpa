@@ -1,0 +1,23 @@
+[project]
+name = "job-sherpa"
+version = "0.1.0"
+description = "An honest job-search assistant for any coding agent: builds your career corpus, finds and scores jobs, tailors resumes that never invent a claim."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = []          # standard library only
+
+[project.optional-dependencies]
+pdf = ["typst>=0.13"]      # renders resumes; or install the typst CLI instead
+
+# Run from a clone. `pip install -e .` inside it puts `sherpa` on your PATH;
+# a plain (non-editable) install lacks templates/ and playbooks/ and says so.
+[project.scripts]
+sherpa = "sherpa.cli:main"
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["sherpa", "sherpa.sources"]
