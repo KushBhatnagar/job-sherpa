@@ -140,6 +140,30 @@ See [Commands](#commands).
 Optional: a free [Adzuna](https://developer.adzuna.com) key in `.env` (see
 `.env.example`) adds a keyword search across employers not on your list.
 
+## Is it actually honest? The eval
+
+Two layers of checking:
+
+- **Code guarantees, tested on every change** (`tests/`): an untraceable resume
+  line or an invented number blocks the PDF, a missing hard requirement caps the
+  score, a job without its full description can't be scored. These hold
+  whichever AI model you use.
+- **An eval of the agent's judgment** ([`evals/`](evals/)): real, headless
+  agent sessions on fictional users and job descriptions built to tempt it:
+  a buried 7-year minimum, a job wanting skills the user doesn't have, a vague
+  resume line begging for a number. Each output is checked against the rules in
+  PRINCIPLES.md.
+
+**Latest results** (Claude Code, 25 Oct 2026, [full report](evals/reports/2026-10-25-claude-code.md)):
+60/60 rule checks passed across scoring, tailoring and onboarding. Every buried
+hard requirement was caught and capped, a "preferred" MBA was not mistaken for a
+required one, and no resume claimed a skill the user lacked. An AI judge found 4
+small stretches in self-written sentences ("leads incident response" for someone
+who wrote the runbook). The playbooks gained a check for exactly those, and two
+repeat runs found none.
+
+Run it with your own agent: `python3 evals/run.py`.
+
 ## Contributing
 
 Bug reports, new job-board adapters, starter lists for other regions and

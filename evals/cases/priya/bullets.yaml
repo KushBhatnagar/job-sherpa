@@ -1,0 +1,102 @@
+# FICTIONAL eval persona. Known-correct bullet bank built from resume.txt.
+
+- id: b-001
+  org: Ledgerly
+  role_title: Product Manager
+  period: 2022-04..present
+  text: Owned the UPI AutoPay mandate flow for 1.2M monthly users; redesigned the setup journey and raised mandate completion from 61% to 78%.
+  metric: 1.2M users; completion 61% -> 78%
+  tags: payments, upi, conversion, user-journey, fintech
+  evidence_strength: strong
+  source: resume line 10
+
+- id: b-002
+  org: Ledgerly
+  role_title: Product Manager
+  period: 2022-04..present
+  text: Ran 14 A/B tests on the checkout page in 2024; two of them together lifted payment success by 3.5 percentage points.
+  metric: 14 tests; +3.5 pp payment success
+  tags: experimentation, a-b-testing, checkout, conversion, data
+  evidence_strength: strong
+  source: resume line 11
+
+- id: b-003
+  org: Ledgerly
+  role_title: Product Manager
+  period: 2022-04..present
+  text: Defined the merchant-payouts roadmap with engineering, risk and finance; cut payout reconciliation tickets by 45%.
+  metric: 45% fewer reconciliation tickets
+  tags: roadmap, stakeholder-management, payouts, operations, b2b
+  evidence_strength: strong
+  source: resume line 12
+
+- id: b-004
+  org: Ledgerly
+  role_title: Product Manager
+  period: 2022-04..present
+  text: Wrote PRDs and acceptance criteria for a team of 9 engineers and 2 designers, shipping every two weeks.
+  metric: team of 9 engineers, 2 designers
+  tags: prd, execution, agile, cross-functional
+  evidence_strength: moderate
+  source: resume line 13
+
+- id: b-005
+  org: Ledgerly
+  role_title: Product Manager
+  period: 2022-04..present
+  text: Interviewed 30+ small merchants to shape the instant-settlement feature, which reached 4,000 merchants in its first quarter.
+  metric: 30+ interviews; 4,000 merchants in Q1
+  tags: user-research, discovery, merchants, launch, b2b
+  evidence_strength: strong
+  source: resume line 14
+
+- id: b-006
+  org: Ledgerly
+  role_title: Product Manager
+  period: 2022-04..present
+  text: Mentored 2 associate product managers through their first year.
+  metric: 2 APMs
+  tags: mentoring, leadership
+  evidence_strength: supporting
+  source: interview (questionnaire block 7)
+
+- id: b-007
+  org: Ledgerly
+  role_title: Business Analyst
+  period: 2020-01..2022-03
+  text: Built SQL dashboards for failed-transaction analysis, used daily by support and operations.
+  metric:
+  tags: sql, analytics, dashboards, payments
+  evidence_strength: moderate
+  source: resume line 17
+
+- id: b-008
+  org: Ledgerly
+  role_title: Business Analyst
+  period: 2020-01..2022-03
+  text: Mapped the dispute-resolution process and found the steps behind 20% of escalations.
+  metric: 20% of escalations
+  tags: process, analysis, operations, disputes
+  evidence_strength: moderate
+  source: resume line 18
+
+- id: b-009
+  org: Northbridge Systems
+  role_title: Software Engineer
+  period: 2018-07..2019-12
+  text: Developed REST APIs in Java for a loan-origination system.
+  metric:
+  tags: java, api, engineering, lending
+  evidence_strength: supporting
+  source: resume line 21
+
+- id: b-010
+  org: Northbridge Systems
+  role_title: Software Engineer
+  period: 2018-07..2019-12
+  text: Improved the performance of nightly batch jobs.
+  metric:
+  tags: performance, engineering
+  evidence_strength: supporting
+  source: resume line 22
+  notes: No number exists for this; never add one.

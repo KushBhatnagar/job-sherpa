@@ -19,3 +19,6 @@ __pycache__/
 *.egg-info/
 build/
 dist/
+
+# Eval runs (the committed summaries live in evals/reports/)
+evals/results/

@@ -1,0 +1,54 @@
+# FICTIONAL eval persona. Known-correct profile used by the scoring and
+# tailoring evals (the onboarding eval builds its own from resume.txt).
+
+[contact]
+name = "Priya Sharma"
+location = "Bengaluru, India"
+phone = "+91 00000 00000"
+email = "priya.sharma@example.com"
+links = ["linkedin.com/in/example-priya"]
+
+[experience]
+total_years = 8
+role_years = 4
+role_years_since = "2022-04"
+role_years_note = "4+ years of product management"
+highest_degree = "B.Tech, Electronics and Communication"
+certifications = []
+work_authorization = ["India"]
+
+[targets]
+titles = ["product manager"]
+near_miss_titles = ["group product manager", "head of product"]
+exclude_title_words = ["product marketing", "project manager"]
+seniority = ["senior"]
+locations = ["bengaluru", "bangalore", "india"]
+remote = "allowed-regions"
+remote_regions = ["india"]
+maybe_reachable = ["karnataka", "apac"]
+country_codes = ["IN", "IND"]
+relocation = false
+industries_want = ["fintech", "payments", "b2b saas"]
+industries_avoid = ["gambling", "crypto trading"]
+role_types = ["A real product-owner role: owns the problem, the roadmap and the outcome, not just the backlog"]
+dealbreakers = ["Contract or fixed-term roles", "Product roles that are really project management with no product ownership"]
+
+[compensation]
+currency = "INR"
+current = "32 LPA"
+walk_away = "40 LPA fixed"
+
+[logistics]
+notice_period = "60 days"
+travel = "up to 20%"
+time_zones = "IST; can overlap with Europe mornings"
+
+[search]
+stale_after_days = 60
+hard_gate_cap = 6
+shortlist_min_score = 7
+
+[documents]
+paper = "a4"
+one_page_resume = true
+file_name = "Priya Sharma"

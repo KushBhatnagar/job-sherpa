@@ -1,0 +1,28 @@
+PRIYA SHARMA
+Bengaluru, India | +91 00000 00000 | priya.sharma@example.com | linkedin.com/in/example-priya
+
+SUMMARY
+Product manager in payments with 8 years in technology: engineering, then analysis, then product.
+
+EXPERIENCE
+
+Ledgerly (fintech, payments) — Product Manager, Apr 2022 – Present
+- Owned the UPI AutoPay mandate flow for 1.2M monthly users; redesigned the setup journey and raised mandate completion from 61% to 78%.
+- Ran 14 A/B tests on the checkout page in 2024; two of them together lifted payment success by 3.5 percentage points.
+- Defined the merchant-payouts roadmap with engineering, risk and finance; cut payout reconciliation tickets by 45%.
+- Wrote PRDs and acceptance criteria for a team of 9 engineers and 2 designers, shipping every two weeks.
+- Interviewed 30+ small merchants to shape the instant-settlement feature, which reached 4,000 merchants in its first quarter.
+
+Ledgerly — Business Analyst, Jan 2020 – Mar 2022
+- Built SQL dashboards for failed-transaction analysis, used daily by support and operations.
+- Mapped the dispute-resolution process and found the steps behind 20% of escalations.
+
+Northbridge Systems — Software Engineer, Jul 2018 – Dec 2019
+- Developed REST APIs in Java for a loan-origination system.
+- Improved the performance of nightly batch jobs.
+
+SKILLS
+Product: roadmapping, PRDs, A/B testing, user interviews | Data: SQL, Mixpanel | Tools: Jira, Figma | Earlier: Java
+
+EDUCATION
+B.Tech, Electronics and Communication — Example Institute of Technology, 2018

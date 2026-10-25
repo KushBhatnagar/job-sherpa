@@ -35,6 +35,8 @@ dates. Start from its structure and trim; don't rebuild the role list.
 5. Summary: 2-3 sentences that mirror the JD's framing using only facts from
    the bullets and profile. State experience exactly as
    `[experience].role_years_note` says, the same in every document.
+   The code only checks the summary's numbers, so check the words yourself
+   (see "Free-text check" below).
 6. Write the payload to `me/drafts/<id>-resume.json`. Same shape as
    `me/master-resume.json`; each bullet is either an id (`"b-001"`, used
    verbatim) or `{"id": "b-001", "text": "aligned wording"}`. Add
@@ -48,6 +50,21 @@ dates. Start from its structure and trim; don't rebuild the role list.
    every resume keeps the same look.
 9. Read the PDF back, then report its path. Nothing is submitted:
    the user reviews, applies, then logs it with `bin/sherpa apply --job-id <id>`.
+
+## Free-text check (summary, and the cover letter too)
+Before rendering, read every sentence you wrote yourself and point each claim
+at the bullet that supports it. Eval runs found these slips; avoid them:
+- **Upgrading the verb.** "Wrote the incident-response runbook" is not
+  "leads incident response"; "mentored" is not "managed".
+- **Moving a skill to another role.** If Go appears only in the logistics
+  role, don't write "Go for logistics and payments".
+- **Adding reach or impact.** "Built a platform" is not "a platform many
+  teams build on" unless a bullet says so.
+- **Inventing an order of events.** Two bullets from the same role have no
+  "before" and "after" unless their dates say so.
+- **Claiming an ability from adjacent experience.** Java APIs do not mean
+  "comfortable working with ML engineers".
+If a sentence fails, cut it or reword it down to what the bullet says.
 
 ## Hard rule
 Every claim must trace to a bullet in `me/bullets.yaml`. If the user tells you

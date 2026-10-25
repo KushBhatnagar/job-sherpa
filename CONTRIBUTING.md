@@ -13,6 +13,10 @@ so changes should make it more honest, more reliable or easier to start with.
 - **Playbooks:** sharper steps, better questions in
   `onboarding/questionnaire.md`, lessons from your own search.
 - **City aliases** in `sherpa/enrich.py` (`_ALIASES`).
+- **Eval results and cases:** run `python3 evals/run.py` with your agent and
+  share the report, or add a case that tests a rule in PRINCIPLES.md
+  (see `evals/README.md`). If you change a playbook, a before/after eval run
+  is the best evidence that it helped.
 
 ## Ground rules
 1. **Standard library only** in `sherpa/`, apart from Typst for rendering.

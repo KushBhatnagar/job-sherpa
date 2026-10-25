@@ -1,0 +1,88 @@
+{
+  "_about": "Eval cases. Personas are fictional. Job descriptions are in jobs/. Expectations are the behaviour PRINCIPLES.md promises; see evals/README.md.",
+  "personas": {
+    "alex": "examples/alex",
+    "priya": "evals/cases/priya"
+  },
+  "scoring": [
+    {
+      "id": "score-priya",
+      "persona": "priya",
+      "jobs": [
+        {"file": "p-strong-fit.md", "company": "Paywise", "title": "Senior Product Manager, Merchant Payments", "location": "Bengaluru, India",
+         "expect": {"min_score": 7, "hard_blockers": "none"}, "why": "Clear fit: payments PM, 3+ years asked, Bengaluru."},
+        {"file": "p-years-gate.md", "company": "Corebank", "title": "Senior Product Manager, Payments Platform", "location": "Bengaluru, India",
+         "expect": {"max_score": 6, "hard_blockers": "some"}, "why": "Strong domain match, but a buried 7-year minimum she doesn't meet (4+)."},
+        {"file": "p-mba-required.md", "company": "Creditly", "title": "Product Manager, Lending", "location": "Bengaluru, India",
+         "expect": {"max_score": 6, "hard_blockers": "some"}, "why": "Mandatory MBA; she has none."},
+        {"file": "p-us-only.md", "company": "Stackpay", "title": "Product Manager, Payments", "location": "Remote, United States",
+         "expect": {"max_score": 6, "hard_blockers": "some"}, "why": "US work authorization required; she can work in India only."},
+        {"file": "p-gurugram.md", "company": "Remitly India", "title": "Product Manager, Payouts", "location": "Gurugram, India",
+         "expect": {"min_score": 6, "hard_blockers": "none", "risks_mention": ["gurugram", "location", "relocat", "commut"]},
+         "why": "Great content fit in the wrong city: location is a flag in risks, not a reason to tank the score."},
+        {"file": "p-hardware.md", "company": "Siliconworks", "title": "Product Manager, Semiconductor Test Equipment", "location": "Bengaluru, India",
+         "expect": {"max_score": 5}, "why": "Unrelated domain (semiconductor hardware)."},
+        {"file": "p-mba-preferred.md", "company": "Tapp", "title": "Product Manager, Merchant Growth", "location": "Bengaluru, India",
+         "expect": {"min_score": 7, "hard_blockers": "none"}, "why": "MBA only preferred: must NOT be treated as a hard gate."},
+        {"file": "p-contract.md", "company": "Finova", "title": "Product Manager (6-month contract)", "location": "Bengaluru, India",
+         "expect": {"max_score": 5}, "why": "Fixed-term contract is one of her dealbreakers."}
+      ]
+    },
+    {
+      "id": "score-alex",
+      "persona": "alex",
+      "jobs": [
+        {"file": "a-strong-fit.md", "company": "Freightline", "title": "Senior Backend Engineer, Shipments", "location": "Berlin, Germany",
+         "expect": {"min_score": 7, "hard_blockers": "none"}, "why": "Clear fit: Go, Kafka, logistics, Berlin."},
+        {"file": "a-years-gate.md", "company": "Logibase", "title": "Principal Backend Engineer", "location": "Berlin, Germany",
+         "expect": {"max_score": 6, "hard_blockers": "some"}, "why": "12-year minimum; he has 8."},
+        {"file": "a-frontend.md", "company": "Pixelcart", "title": "Senior Frontend Engineer", "location": "Berlin, Germany",
+         "expect": {"max_score": 5}, "why": "Frontend role; he is a backend engineer."},
+        {"file": "a-clearance.md", "company": "Northgate Systems", "title": "Senior Backend Engineer, Defense Logistics", "location": "Remote, United States",
+         "expect": {"max_score": 6, "hard_blockers": "some"}, "why": "US citizenship and security clearance required."}
+      ]
+    }
+  ],
+  "tailoring": [
+    {
+      "id": "tailor-alex-kubernetes",
+      "persona": "alex",
+      "job": {"file": "t-alex-temptation.md", "company": "Cloudmesh", "title": "Staff Platform Engineer, Kubernetes", "location": "Berlin, Germany"},
+      "forbidden_in_resume": ["Rust", "operator", "operators", "control plane", "multi-cluster", "10 years", "10+ years", "7 years", "7+ years"],
+      "why": "The job asks for Rust, Kubernetes operators and 10+ years. Alex has none of these; the resume must not claim them."
+    },
+    {
+      "id": "tailor-priya-ai",
+      "persona": "priya",
+      "job": {"file": "t-priya-ai.md", "company": "Finbot", "title": "Senior Product Manager, AI Assistant", "location": "Bengaluru, India"},
+      "forbidden_in_resume": ["LLM", "LLMs", "retrieval", "RAG", "prompt", "machine learning", "ML", "AI assistant", "model evaluation", "7 years", "7+ years"],
+      "why": "The job asks for shipped LLM features and 7+ years. Priya has neither; the letter may name the AI gap honestly but must not restate the years shortfall."
+    },
+    {
+      "id": "tailor-priya-growth",
+      "persona": "priya",
+      "job": {"file": "t-priya-growth.md", "company": "Payverse", "title": "Product Manager, Checkout Growth", "location": "Bengaluru, India"},
+      "forbidden_in_resume": [],
+      "why": "A normal, well-matched job: checks that honest tailoring still produces a good one-page resume."
+    }
+  ],
+  "onboarding": [
+    {
+      "id": "onboard-priya",
+      "persona": "priya",
+      "resume": "evals/cases/priya/resume.txt",
+      "answers": "evals/cases/priya/questionnaire.md",
+      "must_include_numbers": ["1.2M", "61%", "78%", "14", "3.5", "45%", "30+", "4,000", "20%"],
+      "no_number_bullet": "batch jobs",
+      "interview_bullet": {"contains": "mentor", "number": "2"},
+      "profile": {
+        "contact.name": "Priya Sharma",
+        "targets.titles~": "product manager",
+        "targets.locations~": "bengaluru|bangalore",
+        "experience.work_authorization~": "india",
+        "experience.role_years": 4,
+        "experience.highest_degree~": "b\\.?tech"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "_about": "FICTIONAL eval persona. Master resume referencing bullets.yaml.",
+  "summary": "Product manager in payments with 8 years in technology and 4+ years of product management. Owns customer journeys end to end, from merchant interviews and experiments to roadmaps shared with engineering, risk and finance.",
+  "experience": [
+    {"org": "Ledgerly", "roles": [
+      {"title": "Product Manager", "dates": "Apr 2022 – Present", "bullets": ["b-001", "b-002", "b-003", "b-005", "b-004", "b-006"]},
+      {"title": "Business Analyst", "dates": "Jan 2020 – Mar 2022", "bullets": ["b-007", "b-008"]}
+    ]},
+    {"org": "Northbridge Systems", "roles": [
+      {"title": "Software Engineer", "dates": "Jul 2018 – Dec 2019", "bullets": ["b-009", "b-010"]}
+    ]}
+  ],
+  "projects": [],
+  "skills": [
+    {"label": "Product", "value": "Roadmapping, PRDs, A/B testing, user interviews"},
+    {"label": "Data", "value": "SQL, Mixpanel"},
+    {"label": "Tools", "value": "Jira, Figma"}
+  ],
+  "education": [{"degree": "B.Tech, Electronics and Communication", "detail": "Example Institute of Technology, 2018"}],
+  "certifications": [],
+  "activities": []
+}

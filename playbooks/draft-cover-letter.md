@@ -22,6 +22,10 @@ description: Write a cover letter for one job that addresses real gaps honestly 
    use `[experience].role_years_note` as a strength, never as a shortfall.
 4. Never invent a qualification or a number. Numbers must come from
    `bullets.yaml`, `profile.toml`, or the JD itself; the render step checks.
+   The words are not checked by code: before rendering, run the
+   **Free-text check** in `playbooks/tailor-resume.md` on every sentence
+   (no upgraded verbs, no skill moved to another role, no added reach, no
+   invented order of events, no ability claimed from adjacent experience).
 5. Payload in `me/drafts/<id>-letter.json`:
    `{"paragraphs": ["...", "..."], "angle": "..."}` (optional: `"date"`,
    `"greeting"`, `"sign_off"`, `"closing"`). Then:
